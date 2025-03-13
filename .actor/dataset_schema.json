@@ -1,0 +1,32 @@
+{
+  "actorSpecification": 1,
+  "views": {
+    "overview": {
+      "title": "Flight Search Results",
+      "transformation": {
+        "fields": ["origin", "destination", "date", "results"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "origin": {
+            "label": "Origin",
+            "format": "text"
+          },
+          "destination": {
+            "label": "Destination",
+            "format": "text"
+          },
+          "date": {
+            "label": "Flight Date",
+            "format": "text"
+          },
+          "results": {
+            "label": "Flight Results",
+            "format": "json"
+          }
+        }
+      }
+    }
+  }
+}

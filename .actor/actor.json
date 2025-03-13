@@ -1,0 +1,16 @@
+{
+	"actorSpecification": 1,
+	"name": "flight-search-agent",
+	"title": "Flight Search Agent",
+	"description": "A CrewAI agent for searching and summarizing flight options.",
+	"version": "0.1",
+	"buildTag": "latest",
+	"input": "./input_schema.json",
+	"storages": {
+		"dataset": "./dataset_schema.json"
+	},
+	"meta": {
+		"templateId": "python-crewai"
+	},
+	"dockerfile": "./Dockerfile"
+}

@@ -1,0 +1,66 @@
+{
+  "title": "Flight Search Agent",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "origin": {
+      "title": "Origin",
+      "type": "string",
+      "description": "IATA code or city name of the departure location.",
+      "editor": "textfield",
+      "default": "JFK",
+      "prefill": "JFK"
+    },
+    "destination": {
+      "title": "Destination",
+      "type": "string",
+      "description": "IATA code or city name of the destination location.",
+      "editor": "textfield",
+      "default": "LAX",
+      "prefill": "LAX"
+    },
+    "date": {
+      "title": "Flight Date",
+      "type": "string",
+      "description": "Date of the flight in YYYY-MM-DD format.",
+      "editor": "textfield",
+      "default": "2025-04-01",
+      "prefill": "2025-04-01"
+    },
+    "modelName": {
+      "title": "OpenAI model",
+      "type": "string",
+      "description": "The OpenAI model to use. Currently supported models are gpt-4o and gpt-4o-mini",
+      "enum": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "default": "gpt-4o-mini",
+      "prefill": "gpt-4o-mini"
+    },
+    "debug": {
+      "title": "Debug",
+      "type": "boolean",
+      "description": "If enabled, the Actor will run in debug mode and produce more output.",
+      "editor": "checkbox",
+      "default": true
+    },
+    "BROWSERBASE_API_KEY": {
+      "title": "Browserbase API Key",
+      "type": "string",
+      "description": "API key for Browserbase.",
+      "editor": "textfield",
+      "default": "",
+      "prefill": ""
+    },
+    "BROWSERBASE_PROJECT_ID": {
+      "title": "Browserbase Project ID",
+      "type": "string",
+      "description": "Project ID for Browserbase.",
+      "editor": "textfield",
+      "default": "",
+      "prefill": ""
+    }
+  },
+  "required": ["origin", "destination", "date"]
+}

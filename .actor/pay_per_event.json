@@ -1,0 +1,12 @@
+{
+    "actor-start": {
+        "eventTitle": "Actor start",
+        "eventDescription": "Flat fee for starting an Actor run.",
+        "eventPriceUsd": 0.2
+    },
+    "task-completed": {
+        "eventTitle": "Price for completing the flight search task",
+        "eventDescription": "Flat fee for completing the flight search task.",
+        "eventPriceUsd": 0.8
+    }
+}
